@@ -1,0 +1,29 @@
+.DS_Store
+# local preview server
+serve.mjs
+# images no page uses (kept on disk, not published)
+img/case-order/order-before-params.png
+img/case-order/order-full-page.png
+img/case-order/order-type-choice.png
+img/demo-cargo-page.png
+img/demo-cargo-search.png
+img/demo-modal.png
+img/demo-order-status.png
+img/demo-registration.png
+img/demo-role.png
+img/demo-services.png
+img/demo-statuses.png
+img/demo-tags.png
+img/demo-trips.png
+img/order-before-auction.png
+img/order-before-params.png
+img/order-concept-1.png
+img/order-concept-2.png
+img/order-final.png
+img/order-full-page.png
+img/order-problem-linked.png
+img/order-problem-long.png
+img/order-problem-terms.png
+img/order-success-after.png
+img/order-success-before.png
+img/order-variant1.png

@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Редизайн формы создания заявки — Мэри Маркарян</title>
+  <meta name="description" content="Кейс: редизайн формы создания заявки на перевозку в X5 Transport.">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preload" href="fonts/geist-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script>(function (d) { var calm = matchMedia('(prefers-reduced-motion: reduce)').matches; if (!calm) d.classList.add('js'); try { if (!calm && (sessionStorage.getItem('pt') || (d.hasAttribute('data-home') && !sessionStorage.getItem('introSeen')))) d.classList.add('pt-in'); } catch (e) {} })(document.documentElement);</script>
+</head>
+<body>
+
+<header class="header">
+  <div class="wrap grid header__inner">
+    <a href="index.html" class="logo">Мэри Маркарян</a>
+    <nav class="nav">
+      <a href="index.html#cases">Кейсы</a>
+      <a href="index.html#about">Обо мне</a>
+      <a href="#contact" class="nav__contact">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<main class="cs">
+  <section class="wrap grid cs-intro">
+    <a href="index.html#cases" class="cs-back">← Все кейсы</a>
+    <div class="reveal">
+      <p class="cs-eyebrow">Кейс 01</p>
+    </div>
+    <div class="reveal">
+      <h1 class="cs-title">Редизайн формы создания заявки</h1>
+      <p class="cs-lead statement" data-scramble>Форма создания заявки казалась пользователям <mark>тяжёлой</mark>. Я&nbsp;отказалась от пошаговой <mark>формы‑wizard</mark> и собрала все параметры на <mark>одной</mark> <mark>странице</mark> с&nbsp;понятной <mark>логикой</mark>.</p>
+      <table class="cs-table"><tr><th>Период</th><td>1 полугодие 2026</td></tr><tr><th>Продукт</th><td>Кабинет грузовладельца</td></tr><tr><th>Результаты</th><td>Расскажу при встрече</td></tr></table>
+    </div>
+  </section>
+
+  <figure class="wrap cs-hero reveal"><div class="cs-hero__frame"><img style="--w: 74.4%" class="fig" src="img/case-order/order-hero.jpg" alt="Итоговая форма создания заявки на перевозку"></div></figure>
+
+  <section class="wrap grid cs-row">
+    <h2 class="cs-label reveal">Как было</h2>
+    <div class="reveal"><p class="cs-logline">Пошаговая форма-wizard: параметры заявки разбросаны по вкладкам «Параметры» → «Маршрут» → «Стоимость» → «Итог».</p></div>
+    <div class="cs-gallery" style="--n: 2; grid-column: 1 / -1">
+      <figure class="reveal"><div class="cs-shot"><img style="--w: 100.9%" class="fig" src="img/case-order/order-before-params.jpg" alt="Старая форма: шаг Параметры" loading="lazy"></div><p class="cs-caption">Шаг «Параметры»</p></figure>
+      <figure class="reveal"><div class="cs-shot"><img style="--w: 95.9%" class="fig" src="img/case-order/order-before-auction.png" alt="Старая форма: шаг Стоимость" loading="lazy"></div><p class="cs-caption">Шаг «Стоимость»</p></figure>
+    </div>
+  </section>
+
+  <section class="wrap grid cs-row">
+    <h2 class="cs-label reveal">Контекст</h2>
+    <div class="reveal"><p class="cs-logline">X5 Транспорт: грузовладелец создаёт заявку, перевозчик её забирает. Чем проще создать заявку, тем больше заявок и&nbsp;перевозчиков.</p></div>
+    <div class="cs-cards reveal">
+      <div class="cs-card"><h3>Проблема</h3><div><p>Форма казалась тяжёлой для заполнения.</p></div></div>
+      <div class="cs-card cs-card--white"><h3>Гипотеза</h3><div><p>Если форма станет проще, конверсия вырастет, а&nbsp;время создания заявки сократится.</p></div></div>
+      <div class="cs-card"><h3>Цель и метрики</h3><div><p>Сделать создание заявки проще.</p><p>Метрики: конверсия и&nbsp;время создания заявки.</p></div></div>
+    </div>
+  </section>
+
+  <section class="wrap grid cs-row">
+    <h2 class="cs-label reveal">Проблемы</h2>
+    <div class="reveal"><p class="cs-logline">Собрала по наблюдениям и обратной связи за полтора года.</p></div>
+  </section>
+
+  <section class="wrap grid cs-story" data-story>
+    <div class="cs-story__steps">
+      <div class="cs-step">
+        <p class="cs-step__num">№1</p>
+        <h3 class="cs-step__title">Связанные параметры — на разных шагах</h3>
+        <p class="cs-step__text">Чтобы заполнить зависимое поле, приходилось возвращаться назад.</p>
+        <div class="cs-step__img"><img class="fig" src="img/case-order/order-problem-linked.png" alt="Взаимозависимые поля на разных шагах" loading="lazy"></div>
+      </div>
+      <div class="cs-step">
+        <p class="cs-step__num">№2</p>
+        <h3 class="cs-step__title">Форма казалась длинной и тяжёлой</h3>
+        <p class="cs-step__text">Из-за большого количества пустого места пользователи думали, что данные не загрузились.</p>
+        <div class="cs-step__img"><img class="fig" src="img/case-order/order-problem-long.png" alt="Длинная форма с пустым пространством" loading="lazy"></div>
+      </div>
+      <div class="cs-step">
+        <p class="cs-step__num">№3</p>
+        <h3 class="cs-step__title">Непонятные термины</h3>
+        <p class="cs-step__text">Пользователи не знали наших терминов и не пользовались подсказками при наведении.</p>
+        <div class="cs-step__img"><img class="fig" src="img/case-order/order-problem-terms.png" alt="Термины без пояснений" loading="lazy"></div>
+      </div>
+      <div class="cs-step">
+        <p class="cs-step__num">№4</p>
+        <h3 class="cs-step__title">Визуально уступали конкурентам</h3>
+        <p class="cs-step__text">Сравнила интерфейс с другими логистическими платформами — по аккуратности и понятности мы проигрывали.</p>
+        <div class="cs-step__img"><img class="flat" src="img/case-order/order-problem-competitors.png" alt="Старая форма создания заявки" loading="lazy"></div>
+      </div>
+    </div>
+    <div class="cs-story__panel">
+      <figure class="cs-story__media"><img style="--w: 92.4%; --h: 52.5%" class="fig" src="img/case-order/order-problem-linked.png" alt="Взаимозависимые поля на разных шагах" loading="lazy"></figure>
+      <figure class="cs-story__media"><img style="--w: 76.9%; --h: 92.5%" class="fig" src="img/case-order/order-problem-long.png" alt="Длинная форма с пустым пространством" loading="lazy"></figure>
+      <figure class="cs-story__media"><img style="--w: 86.7%; --h: 57.2%" class="fig" src="img/case-order/order-problem-terms.png" alt="Термины без пояснений" loading="lazy"></figure>
+      <figure class="cs-story__media"><img style="--w: 95.5%; --h: 90.8%" class="flat" src="img/case-order/order-problem-competitors.png" alt="Старая форма создания заявки" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <section class="wrap grid cs-row">
+    <h2 class="cs-label reveal">Решения</h2>
+    <div class="reveal"><p class="cs-logline">Изучила, как устроено создание груза у Ati.su, CargoMart, Pooling и Uber Freight, и перенесла лучшие паттерны на наш контекст.</p></div>
+  </section>
+
+  <section class="wrap grid cs-story" data-story>
+    <div class="cs-story__steps">
+      <div class="cs-step">
+        <p class="cs-step__num">№1</p>
+        <h3 class="cs-step__title">Отказ от wizard и группировка по смыслу</h3>
+        <p class="cs-step__text">Все параметры на одной странице, в логике «тип перевозки → маршрут → условия → груз → способ размещения». Связанные поля больше не разнесены по вкладкам.</p>
+        <div class="cs-step__img"><img class="fig" src="img/case-order/order-full-page.jpg" alt="Новая форма целиком" loading="lazy"></div>
+      </div>
+      <div class="cs-step">
+        <p class="cs-step__num">№2</p>
+        <h3 class="cs-step__title">Выбор типа перевозки прямо в форме</h3>
+        <p class="cs-step__text">Раньше тип выбирался в выпадающем меню до входа в форму. Теперь каждый тип раскрыт пояснением — клиент сам понимает, что ему подходит.</p>
+        <div class="cs-step__img"><img class="fig" src="img/case-order/order-type-choice.jpg" alt="Выбор типа перевозки в форме" loading="lazy"></div>
+      </div>
+      <div class="cs-step">
+        <p class="cs-step__num">№3</p>
+        <h3 class="cs-step__title">«Что делать дальше»</h3>
+        <p class="cs-step__text">Клиенты не понимали, как пойдёт работа с заявкой после публикации. Добавила понятные следующие шаги.</p>
+        <div class="cs-step__img"><img class="fig" src="img/case-order/order-success-after.png" alt="Экран успешной публикации со следующими шагами" loading="lazy"></div>
+      </div>
+    </div>
+    <div class="cs-story__panel">
+      <figure class="cs-story__media"><img style="--w: 32.1%; --h: 95.8%" class="fig" src="img/case-order/order-full-page.jpg" alt="Новая форма целиком" loading="lazy"></figure>
+      <figure class="cs-story__media"><img style="--w: 86%; --h: 70.3%" class="fig" src="img/case-order/order-type-choice.jpg" alt="Выбор типа перевозки в форме" loading="lazy"></figure>
+      <figure class="cs-story__media"><img style="--w: 86%; --h: 65.2%" class="fig" src="img/case-order/order-success-after.png" alt="Экран успешной публикации со следующими шагами" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <section class="wrap grid cs-row">
+    <h2 class="cs-label reveal">Варианты</h2>
+    <div class="reveal"><p class="cs-logline">Сравнила два подхода.</p></div>
+    <div class="cs-gallery" style="--n: 2; grid-column: 1 / -1">
+      <figure class="reveal"><div class="cs-shot"><img style="--w: 104.1%" class="fig" src="img/case-order/order-variant1.png" alt="Вариант 1: форма в два этапа" loading="lazy"></div><p class="cs-caption"><b>Вариант 1</b> · два шага</p><ul class="cs-list cs-list--plus"><li>Связанные параметры ближе друг к другу</li><li>Меньше когнитивного переключения</li></ul><ul class="cs-list cs-list--minus"><li>Пользователь всё ещё проходит несколько этапов</li></ul></figure>
+      <figure class="reveal"><div class="cs-shot"><img style="--w: 47.9%" class="fig" src="img/case-order/order-variant2.png" alt="Вариант 2: все параметры на одной странице" loading="lazy"></div><p class="cs-caption"><b>Вариант 2</b> · одна страница</p><ul class="cs-list cs-list--plus"><li>Все параметры на одной странице — проще сопоставлять связанные данные</li></ul><ul class="cs-list cs-list--minus"><li>Риск перегрузить пользователя длинной страницей</li></ul></figure>
+    </div>
+  </section>
+
+  <section class="wrap grid cs-row">
+    <h2 class="cs-label reveal">Итоговое решение</h2>
+    <div class="reveal"><p class="cs-logline">Был выбран вариант&nbsp;2. Всё на одной странице, сгруппировано по смыслу: выбор типа заявки с пояснениями, группировка параметров и предпросмотр перед публикацией.</p></div>
+  </section>
+
+  <section class="wrap grid cs-row">
+    <h2 class="cs-label reveal">Целевой концепт</h2>
+    <div class="reveal"><p class="cs-logline">Как форма будет расти: новые блоки из бэклога — индикатор качества заказа, рекомендованная стоимость, сохранение шаблона — встают в готовую структуру.</p></div>
+    <div class="cs-gallery" style="--n: 2; grid-column: 1 / -1">
+      <figure class="reveal"><div class="cs-shot"><img style="--w: 102.7%" class="fig" src="img/case-order/order-concept-1.png" alt="Целевой концепт: маршрут и качество заказа" loading="lazy"></div></figure>
+      <figure class="reveal"><div class="cs-shot"><img style="--w: 102.7%" class="fig" src="img/case-order/order-concept-2.png" alt="Целевой концепт: способ размещения" loading="lazy"></div></figure>
+    </div>
+  </section>
+
+  <section class="wrap grid cs-row">
+    <h2 class="cs-label reveal">Результаты</h2>
+    <div class="reveal"><p class="cs-logline statement" data-scramble>Цифры расскажу <mark>при</mark> <mark>встрече</mark>: метрики <mark>конверсии</mark> и&nbsp;<mark>времени</mark> создания заявки&nbsp;— внутренние данные компании.</p></div>
+    <div class="cs-results reveal" style="--n: 2; grid-column: 2"><div><span>Conversion Rate</span><b>при встрече</b></div><div><span>Время создания заявки</span><b>при встрече</b></div></div>
+  </section>
+
+  <section class="wrap grid cs-next">
+    <p class="cs-label">Следующий кейс</p>
+    <a href="case-demo.html">Демо-версия платформы <span aria-hidden="true">→</span></a>
+  </section>
+</main>
+
+<section class="contact" id="contact" data-ripple>
+  <div class="wrap">
+    <h2 class="statement contact__statement" data-scramble data-replay data-ripple-origin>Открыта к&nbsp;предложениям на позицию <mark>продуктового</mark> <mark>дизайнера</mark>.</h2>
+    <p class="statement contact__note" data-scramble data-replay>Удобнее всего&nbsp;— в&nbsp;Telegram.</p>
+    <div class="contact__actions reveal">
+      <a href="https://t.me/mmmerymark" class="pill-btn" target="_blank" rel="noopener">Telegram <span aria-hidden="true">↗</span></a>
+      <button type="button" class="pill-btn" data-copy-email="merymark1999@gmail.com">Скопировать почту</button>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>© 2026 Мэри Маркарян</span>
+    <span>Сделано с любовью 💙</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
